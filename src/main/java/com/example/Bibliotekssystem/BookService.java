@@ -2,6 +2,7 @@ package com.example.Bibliotekssystem;
 
 import com.example.Bibliotekssystem.BookRepository.BookRepository;
 import com.example.Bibliotekssystem.model.Book;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

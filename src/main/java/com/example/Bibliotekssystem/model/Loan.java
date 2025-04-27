@@ -1,8 +1,6 @@
 package com.example.Bibliotekssystem.model;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
@@ -11,6 +9,8 @@ import lombok.NoArgsConstructor;
 public class Loan {
 
     @Id
+    @Getter
+    @Setter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long bookid;
@@ -19,7 +19,11 @@ public class Loan {
     public Loan(Long bookId, String borrower) {
     }
 
+    public long getId(){
+        return id;
+    }
 
     public String getUserId() {
+        return null;
     }
 }
